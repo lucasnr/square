@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Square</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/block/form.css" />
+		<link rel="stylesheet" href="./assets/css/pages/form.css" />
+	</head>
+	<body>
+		<main class="d-flex flex-column align-items-center justify-content-center">
+			<div class="px-sm-3 w-100">
+				<form class="form">
+					<img
+						src="./assets/img/logo-colored.png"
+						alt="Logo Square"
+						class="img-fluid logo"
+					/>
+					<h1 class="form-title">Login</h1>
+
+					<div class="form-group">
+						<label class="form-label" for="login">Login</label>
+						<input
+							type="text"
+							class="form-input"
+							id="login"
+							name="login"
+							placeholder="Your Login"
+						/>
+					</div>
+
+					<div class="form-group form-group-password">
+						<label class="form-label" for="pass">Password</label>
+						<input
+							type="password"
+							class="form-input"
+							id="pass"
+							placeholder="********"
+						/>
+
+						<button class="form-icon-button" type="button">
+							<span class="iconify" data-icon="mdi-eye"></span>
+						</button>
+					</div>
+
+					<img
+						src="./assets/img/captcha.png"
+						alt="Captcha"
+						class="form-captcha"
+					/>
+
+					<button type="submit" class="form-button">Login</button>
+
+					<span class="form-text">
+						I'm not registered. <a href="#">click here</a>
+					</span>
+				</form>
+			</div>
+
+			<span class="copyright">2021 All rights reserved. Square token</span>
+		</main>
+
+		<script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+		<script src="./assets/js/popper.min.js"></script>
+		<script src="./assets/js/bootstrap.min.js"></script>
+
+		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+		<script src="./assets/js/password-toggler.js"></script>
+	</body>
+</html>

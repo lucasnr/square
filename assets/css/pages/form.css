@@ -1,0 +1,23 @@
+body {
+	background-position: center;
+	background-size: cover;
+}
+
+.copyright {
+	display: block;
+	font-size: 0.875rem;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+@media (min-width: 576px) {
+	body {
+		background-image: url(../../img/background-alt.png);
+		padding: 2.5rem 0px;
+	}
+
+	.copyright {
+		color: #fff;
+		margin-top: 2rem;
+	}
+}
