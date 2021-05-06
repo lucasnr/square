@@ -10,6 +10,36 @@ body {
 	text-align: center;
 }
 
+.form {
+	background-color: #fff;
+	border-radius: 1rem;
+	margin: auto;
+	max-width: 37.5rem;
+	padding: 1.25rem;
+	width: 100%;
+}
+
+.form-logo {
+	margin: auto;
+	display: block;
+	width: 7rem;
+}
+
+.form-title {
+	font-size: 1.625rem;
+	font-weight: 400;
+	margin: 2rem 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.form-text {
+	display: block;
+	font-size: 1rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+
 @media (min-width: 576px) {
 	body {
 		background-image: url(../../img/background-alt.png);
@@ -19,5 +49,32 @@ body {
 	.copyright {
 		color: #fff;
 		margin-top: 2rem;
+	}
+
+	.form {
+		padding-bottom: 2.5rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		padding-top: 2rem;
+	}
+
+	.form-title {
+		margin: 3.375rem 0px;
+	}
+
+	.form-text {
+		margin-top: 3.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.form {
+		padding-left: 3.625rem;
+		padding-right: 3.625rem;
+		padding-top: 5.625rem;
+	}
+
+	.form-logo {
+		width: 10rem;
 	}
 }

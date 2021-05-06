@@ -27,14 +27,14 @@
 						alt="Logo Square"
 						class="img-fluid form-logo"
 					/>
-					<h1 class="form-title">Login</h1>
+					<h1 class="form-title">Register</h1>
 
 					<div class="form-group">
-						<label class="form-label" for="login">Login</label>
+						<label class="form-label" for="login">Email</label>
 						<input
-							type="text"
-							class="form-input"
 							id="login"
+							type="email"
+							class="form-input"
 							name="login"
 							placeholder="Your Login"
 						/>
@@ -43,9 +43,9 @@
 					<div class="form-group form-group-password">
 						<label class="form-label" for="pass">Password</label>
 						<input
+							id="pass"
 							type="password"
 							class="form-input"
-							id="pass"
 							placeholder="⚹⚹⚹⚹⚹⚹⚹⚹⚹⚹"
 						/>
 
@@ -54,17 +54,46 @@
 						</button>
 					</div>
 
-					<img
-						src="./assets/img/captcha.png"
-						alt="Captcha"
-						class="form-captcha"
-					/>
+					<div class="form-group form-group-password">
+						<label class="form-label" for="pass2">Repeat Password</label>
+						<input
+							id="pass2"
+							type="password"
+							class="form-input"
+							placeholder="⚹⚹⚹⚹⚹⚹⚹⚹⚹⚹"
+						/>
 
-					<button type="submit" class="form-button">Login</button>
+						<button class="form-icon-button" type="button">
+							<span class="iconify" data-icon="mdi-eye"></span>
+						</button>
+					</div>
+
+					<div class="d-flex flex-column px-4 mt-4">
+						<div class="custom-control custom-checkbox">
+							<input
+								type="checkbox"
+								class="custom-control-input"
+								id="keep-signed"
+							/>
+							<label class="custom-control-label" for="keep-signed">
+								Keep me signed in
+							</label>
+						</div>
+
+						<div class="custom-control custom-checkbox mt-3">
+							<input type="checkbox" class="custom-control-input" id="terms" />
+							<label class="custom-control-label" for="terms">
+								I agree with
+								<a href="#" class="form-link">Parallels Term of Use</a>.
+							</label>
+						</div>
+					</div>
+
+					<button type="submit" class="form-button">Register</button>
 
 					<span class="form-text">
-						I'm not registered.
-						<a href="./register.html" class="form-link">click here</a>
+						I'm already registered.
+						<a href="./login.html" class="form-link">click here</a>
 					</span>
 				</form>
 			</div>
