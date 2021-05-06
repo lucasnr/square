@@ -1,0 +1,145 @@
+main {
+	background-image: url(../../img/background.png);
+	background-position: top center;
+	background-size: cover;
+	color: #fff;
+	padding: 3rem 0px;
+}
+
+.logo {
+	height: 2.625rem;
+	width: 5.875rem;
+}
+
+.flag {
+	height: 1.25rem;
+	width: 1.25rem;
+}
+
+.language {
+	font-weight: 700;
+	font-size: 0.875rem;
+}
+
+.language svg {
+	color: #77cff8;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.banner {
+	padding: 4.5rem 0px;
+}
+
+.banner .banner-welcome {
+	color: #74c8f1;
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 0.8125rem;
+}
+
+.banner .banner-title {
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-bottom: 2.25rem;
+	margin-top: 1.875rem;
+}
+
+.banner .banner-title strong {
+	color: #547dfb;
+}
+
+.banner .banner-button {
+	background-color: #547dfb;
+	border: 0.0625rem solid #7ad4fd;
+	border-radius: 80rem;
+	box-shadow: 0px 0px 0.5rem #000;
+	color: #fff;
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 0.625rem 1.625rem;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.banner .banner-button:hover {
+	background-color: rgba(84, 125, 251, 0.375);
+}
+
+.banner .banner-timer {
+	margin-top: 5rem;
+}
+
+.timer {
+	align-items: center;
+	display: flex;
+}
+
+.timer .timer-group {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	min-width: 8.25rem;
+	padding: 0px 1.5rem;
+}
+
+.timer .timer-value,
+.timer .timer-separator {
+	font-size: 3.875rem;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+.timer .timer-separator {
+	margin-top: -1.25rem;
+}
+
+.timer .timer-label {
+	font-size: 0.875rem;
+	font-weight: 600;
+	margin-bottom: 0px;
+	margin-top: -0.25rem;
+}
+
+.banner .banner-info {
+	background-color: #547dfb;
+	border-radius: 0.5rem;
+	font-size: 0.75rem;
+	font-weight: 500;
+	margin: 3.375rem 0px;
+	padding: 1.875rem 2rem;
+}
+
+.banner .banner-info .progress {
+	border-radius: 50rem;
+	height: 0.625rem;
+}
+
+.banner .banner-info .progress-bar {
+	background-color: #0c2442;
+}
+
+.banner .banner-info .banner-info-button {
+	background-color: #2b0b7a;
+	background-image: linear-gradient(to right, #2b0b7a, #547dfb);
+	border-radius: 50rem;
+	color: #fff;
+	font-weight: 500;
+	padding: 0.6875rem 1.875rem;
+	text-decoration: none;
+	transition: opacity 0.3s ease;
+}
+
+.banner .banner-info .banner-info-button:hover,
+.banner .banner-info .banner-info-button:focus {
+	opacity: 0.7;
+}
+
+.banner .banner-info img {
+	height: 1.25rem;
+	width: 1.25rem;
+}
+
+.banner .banner-exchange {
+	opacity: 0.375;
+}
