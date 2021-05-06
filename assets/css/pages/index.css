@@ -3,7 +3,8 @@ main {
 	background-position: top center;
 	background-size: cover;
 	color: #fff;
-	padding: 3rem 0px;
+	padding-bottom: 9.375rem;
+	padding-top: 1.5rem;
 }
 
 .logo {
@@ -28,20 +29,20 @@ main {
 }
 
 .banner {
-	padding: 4.5rem 0px;
+	padding-top: 4.5rem;
 }
 
 .banner .banner-welcome {
 	color: #74c8f1;
-	font-size: 0.875rem;
+	font-size: 0.625rem;
 	font-weight: 600;
-	letter-spacing: 0.8125rem;
+	letter-spacing: 0.375rem;
 }
 
 .banner .banner-title {
-	font-size: 1.875rem;
+	font-size: 1.5rem;
 	font-weight: 700;
-	margin-bottom: 2.25rem;
+	margin-bottom: 2rem;
 	margin-top: 1.875rem;
 }
 
@@ -79,23 +80,22 @@ main {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	min-width: 8.25rem;
-	padding: 0px 1.5rem;
+	padding: 0px 0.5rem;
 }
 
 .timer .timer-value,
 .timer .timer-separator {
-	font-size: 3.875rem;
+	font-size: 2.25rem;
 	font-weight: 600;
 	margin-bottom: 0px;
 }
 
 .timer .timer-separator {
-	margin-top: -1.25rem;
+	margin-top: -1.125rem;
 }
 
 .timer .timer-label {
-	font-size: 0.875rem;
+	font-size: 0.75rem;
 	font-weight: 600;
 	margin-bottom: 0px;
 	margin-top: -0.25rem;
@@ -104,10 +104,11 @@ main {
 .banner .banner-info {
 	background-color: #547dfb;
 	border-radius: 0.5rem;
-	font-size: 0.75rem;
+	font-size: 0.625rem;
 	font-weight: 500;
 	margin: 3.375rem 0px;
-	padding: 1.875rem 2rem;
+	padding: 1.625rem 1.25rem;
+	/* padding: 1.875rem 2rem; */
 }
 
 .banner .banner-info .progress {
@@ -125,7 +126,7 @@ main {
 	border-radius: 50rem;
 	color: #fff;
 	font-weight: 500;
-	padding: 0.6875rem 1.875rem;
+	padding: 0.6875rem 1rem;
 	text-decoration: none;
 	transition: opacity 0.3s ease;
 }
@@ -141,5 +142,110 @@ main {
 }
 
 .banner .banner-exchange {
-	opacity: 0.375;
+	margin-bottom: 11rem;
+	opacity: 0.5;
+	overflow: auto;
+}
+
+.step {
+	align-items: center;
+	display: flex;
+	font-size: 1.0625rem;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.step + .step {
+	margin-top: 6.625rem;
+}
+
+.step p {
+	line-height: 1.25;
+	margin-bottom: 0px;
+}
+
+.step .step-title {
+	font-size: 1.625rem;
+	font-weight: 700;
+	margin-bottom: 0px;
+	margin-top: 2.5rem;
+	text-transform: uppercase;
+}
+
+.step .step-title::after {
+	background-color: #547dfb;
+	border-radius: 50rem;
+	content: " ";
+	display: block;
+	height: 0.25rem;
+	margin-bottom: 1.625rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5rem;
+	width: 2.875rem;
+}
+
+.footer {
+	background-color: #080f17;
+	padding: 1.75rem 1rem;
+}
+
+@media (min-width: 576px) {
+	.step .step-title::after {
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 576px) {
+	main {
+		padding-top: 3rem;
+	}
+
+	.banner .banner-welcome {
+		font-size: 0.875rem;
+		letter-spacing: 0.8125rem;
+	}
+
+	.banner .banner-title {
+		font-size: 1.875rem;
+	}
+
+	.banner .banner-info {
+		font-size: 0.75rem;
+	}
+
+	.banner .banner-info .banner-info-button {
+		padding: 0.6875rem 1.875rem;
+	}
+
+	.timer .timer-group {
+		padding: 0px 1.5rem;
+	}
+
+	.timer .timer-value,
+	.timer .timer-separator {
+		font-size: 3.875rem;
+	}
+
+	.timer .timer-label {
+		font-size: 0.875rem;
+	}
+
+	.timer .timer-separator {
+		margin-top: -1.25rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.timer .timer-group {
+		min-width: 8.25rem;
+	}
+
+	.step {
+		flex-direction: row;
+	}
+
+	.step:nth-of-type(even) {
+		flex-direction: row-reverse;
+	}
 }
