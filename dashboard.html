@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Square - Dashboard</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/block/form.css" />
+		<link rel="stylesheet" href="./assets/css/pages/dashboard.css" />
+	</head>
+	<body>
+		<aside class="topbar">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center">
+					<img
+						src="./assets/img/logo-colored.png"
+						alt="Logo Square"
+						class="logo ml-2"
+					/>
+					<div class="topbar-user d-flex align-items-center">
+						<span>
+							Olá, Bruno Morais
+							<span class="d-none d-sm-inline"> Ribeiro </span>
+						</span>
+						<img
+							src="./assets/img/avatar.png"
+							alt="User avatar"
+							class="topbar-avatar"
+						/>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 mb-3 mb-sm-0">
+						<section class="section h-100 d-flex flex-column" id="exchange">
+							<h2 class="title">Exchange</h2>
+							<h3 class="value">1 SQT = 0,1 BNB</h3>
+
+							<h4 class="subtitle mt-auto">MarketCap</h4>
+							<span class="d-block" id="marketcap">5.000.000</span>
+						</section>
+					</div>
+					<div class="col-sm-7">
+						<section class="section h-100">
+							<h2 class="title text-uppercase">Enter the wallet data.</h2>
+							<div class="form-group">
+								<label for="address" class="form-label text-uppercase">
+									Address
+								</label>
+								<input
+									type="text"
+									class="form-input"
+									id="address"
+									placeholder="0X0000000000000"
+								/>
+							</div>
+
+							<span class="d-block my-3">
+								*Check your wallet data before sending.
+							</span>
+
+							<button class="form-button">Login</button>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

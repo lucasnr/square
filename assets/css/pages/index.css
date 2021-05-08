@@ -7,6 +7,10 @@ main {
 	padding-top: 1.5rem;
 }
 
+.container {
+	max-width: calc(49.125rem + 15px) !important;
+}
+
 .logo {
 	height: 2.625rem;
 	width: 5.875rem;

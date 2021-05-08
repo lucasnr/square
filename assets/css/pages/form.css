@@ -40,6 +40,10 @@ body {
 	text-align: center;
 }
 
+.form-button {
+	margin-top: 1.75rem;
+}
+
 @media (min-width: 576px) {
 	body {
 		background-image: url(../../img/background-alt.png);
