@@ -70,9 +70,27 @@ main {
 	font-size: 1.5rem;
 }
 
+.modal-content {
+	border-radius: 0.625rem;
+	padding: 2.5rem 1.75rem;
+}
+
+.modal-content #address {
+	font-size: 1.625rem;
+}
+
+.modal-open .topbar,
+.modal-open main {
+	filter: blur(0.125rem);
+}
+
 @media (min-width: 576px) {
 	.section {
 		padding: 1.5rem 1rem;
+	}
+
+	.modal-content {
+		padding: 3rem;
 	}
 }
 

@@ -72,11 +72,49 @@
 								*Check your wallet data before sending.
 							</span>
 
-							<button class="form-button">Login</button>
+							<button
+								class="form-button"
+								data-toggle="modal"
+								data-target="#confirm-modal"
+							>
+								Login
+							</button>
 						</section>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="confirm-modal"
+			tabindex="-1"
+			role="dialog"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<h2 class="title text-uppercase mb-0">Confirm your address</h2>
+
+					<div class="form-label text-uppercase my-4 pl-0">Address</div>
+					<h2 class="title font-weight-bold" id="address">0X0000000000000</h2>
+
+					<div class="d-flex">
+						<button class="form-button mr-2">Confirm</button>
+						<button
+							class="form-button form-button-cancel ml-2"
+							data-dismiss="modal"
+						>
+							Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+		<script src="./assets/js/popper.min.js"></script>
+		<script src="./assets/js/bootstrap.min.js"></script>
 	</body>
 </html>

@@ -13,9 +13,13 @@
 	display: block;
 	font-size: 1rem;
 	font-weight: 700;
-	left: 1.5rem;
 	margin-bottom: 0px;
 	padding: 0px 0.25rem;
+	position: relative;
+}
+
+.form-group .form-label {
+	left: 1.5rem;
 	position: absolute;
 	top: -0.6875rem;
 }
@@ -66,7 +70,6 @@
 	border: none;
 	border-radius: 0.625rem;
 	background-color: #2b0b7a;
-	background-image: linear-gradient(to right, #2b0b7a, #547efc);
 	background-image: linear-gradient(to right, #2b0b7a 51%, #547efc);
 	color: #fff;
 	display: block;
@@ -77,6 +80,11 @@
 	text-transform: uppercase;
 	transition: opacity 0.3s ease;
 	width: 100%;
+}
+
+.form-button.form-button-cancel {
+	background-color: #9f9f9f;
+	background-image: none;
 }
 
 .form-button:hover,
