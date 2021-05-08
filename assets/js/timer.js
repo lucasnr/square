@@ -24,10 +24,10 @@ function updateCountdown() {
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 	// Display the result in the elements
-	daysElement.text(String(days).padStart(2, "0"));
-	hoursElement.text(String(hours).padStart(2, "0"));
-	minutesElement.text(String(minutes).padStart(2, "0"));
-	secondsElement.text(String(seconds).padStart(2, "0"));
+	daysElement.text(String(days >= 0 ? days : 0).padStart(2, "0"));
+	hoursElement.text(String(hours >= 0 ? hours : 0).padStart(2, "0"));
+	minutesElement.text(String(minutes >= 0 ? minutes : 0).padStart(2, "0"));
+	secondsElement.text(String(seconds >= 0 ? seconds : 0).padStart(2, "0"));
 
 	// If the count down is finished
 	if (distance < 0) clearInterval(interval);
