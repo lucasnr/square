@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<link rel="stylesheet" href="./assets/css/block/form.css" />
 		<link rel="stylesheet" href="./assets/css/pages/dashboard.css" />
+		<link rel="stylesheet" href="./assets/css/block/steps.css" />
 	</head>
 	<body>
 		<aside class="topbar">
@@ -44,18 +45,22 @@
 		<main>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-5 mb-3 mb-sm-0">
+					<div class="col-md-5">
 						<section class="section h-100 d-flex flex-column" id="exchange">
-							<h2 class="title">Exchange</h2>
-							<h3 class="value">1 SQT = 0,1 BNB</h3>
+							<h2 class="title">Price</h2>
+							<h3 class="value">
+								<img src="./assets/img/exchange.png" />
+								1 SQUA
+								<small> = 0,1 BNB </small>
+							</h3>
 
-							<h4 class="subtitle mt-auto">MarketCap</h4>
-							<span class="d-block" id="marketcap">5.000.000</span>
+							<h4 class="title mt-4 mt-md-auto">MarketCap</h4>
+							<span class="d-block" id="marketcap">5.000.000 SQUA</span>
 						</section>
 					</div>
-					<div class="col-sm-7">
+					<div class="col-md-7">
 						<section class="section h-100">
-							<h2 class="title text-uppercase">Enter the wallet data.</h2>
+							<h2 class="title">Enter the wallet data.</h2>
 							<div class="form-group">
 								<label for="address" class="form-label text-uppercase">
 									Address
@@ -77,8 +82,66 @@
 								data-toggle="modal"
 								data-target="#confirm-modal"
 							>
-								Login
+								Save
 							</button>
+						</section>
+					</div>
+
+					<div class="col-12">
+						<section class="section">
+							<ul class="steps">
+								<li>
+									<h3 class="step-title">
+										Create
+										<br />
+										Whitelist
+									</h3>
+									<div class="step-icon">
+										<img src="./assets/img/steps/create.png" />
+									</div>
+								</li>
+								<li>
+									<h3 class="step-title">
+										Publish
+										<br />
+										Whitelist
+									</h3>
+									<div class="step-icon">
+										<img src="./assets/img/steps/publish.png" />
+									</div>
+								</li>
+								<li>
+									<h3 class="step-title">
+										Inssue
+										<br />
+										Token
+									</h3>
+									<div class="step-icon">
+										<img src="./assets/img/steps/inssue.png" />
+									</div>
+								</li>
+							</ul>
+						</section>
+					</div>
+
+					<div class="col-md-6">
+						<section class="section video-container">
+							<h3 class="title">How to buy?</h3>
+
+							<img
+								src="./assets/img/video.png"
+								class="img-fluid w-100 d-block"
+							/>
+						</section>
+					</div>
+					<div class="col-md-6">
+						<section class="section video-container">
+							<h3 class="title">How to negotiate?</h3>
+
+							<img
+								src="./assets/img/video.png"
+								class="img-fluid w-100 d-block"
+							/>
 						</section>
 					</div>
 				</div>
