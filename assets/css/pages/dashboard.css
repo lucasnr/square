@@ -34,7 +34,7 @@ main {
 	padding-top: 2.5rem;
 }
 
-main .row > * {
+main .container > .row > * {
 	margin-bottom: 1rem;
 }
 
@@ -103,13 +103,17 @@ main .row > * {
 }
 
 @media (min-width: 576px) {
+	.section p {
+		font-size: 1.25rem;
+	}
+
 	.modal-content {
 		padding: 3rem;
 	}
 }
 
 @media (min-width: 768px) {
-	main .row > * {
+	main .container > .row > * {
 		margin-bottom: 1.875rem;
 	}
 }
